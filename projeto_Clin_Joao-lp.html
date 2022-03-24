@@ -7,6 +7,7 @@
     <title>Desafio Clin</title>
     <link rel="styleSheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700|Montserrat:500,600|Roboto:300,400,600" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="Clin">
@@ -25,24 +26,25 @@
                 <p>Horários disponíveis:</p>
             </div>
         <div class="selecao-medico">
-            <select name="select">
+            <select id="selMed" name="select">
+                <option value="0">Escolha o seu médico</option>
                 <option value="1">Médico  joao1</option>
                 <option value="2">Médico  2</option>
                 <option value="3">Médico testeteste3</option>
               </select>
         </div>
         <div class="selecao-horario">
-            <select name="select">
-                <option value="valor1">hh:mm</option>
-                <option value="valor2">hh:mm</option>
-                <option value="valor3">hh:mm</option>
+            <select id="selHorario" name="select">
+                <option value="0">selecione</option>
+                <option value="1">hh:mm</option>
+                <option value="2">hh:mm</option>
+                <option value="3">hh:mm</option>
               </select>
         </div>
-            <a class="cta" href="projetoClinJoao-Cadastro.html">
-                <span>Marcar consulta</span>
-            </a>
+            <button id="buttonInicial" onclick="checagem()" class="cta">
+                <span>Marcar consulta</span>  
+            </button>
         </div>
     </div>
-    
 </body>
 </html>
