@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" href="Style.css">
+    <script src="script.js"></script>
     <title>Cadastro do paciente</title>
 </head>
 <body>
@@ -15,40 +16,40 @@
     <div class="container">
         <div class="Nome\:">
             <p>Nome:</p>
-            <input type="text" name="inputNome" size="30" required>
+            <input type="text" name="inputNome" size="30" id="inputNome" required>
         </div>
         <div class="Sobrenome\:">
             <p>Sobrenome:</p>
-            <input type="text" name="inputSobrenome" size="30" required>
+            <input type="text" name="inputSobrenome" size="30" id="inputSobrenome" required>
         </div>
         <div class="Peso\:">
             <p>Peso:</p>
-            <input type="number" name="inputPeso" placeholder="Insira seu peso em kg" size="30" required min="5" max="300">
+            <input type="number" name="inputPeso" placeholder="Insira seu peso em kg" size="30" id="inputPeso" required min="5" max="300">
         </div>
         <div class="Altura\:">
             <p>Altura:</p>
-            <input type="number" name="inputAltura" size="30" required>
+            <input type="number" name="inputAltura" size="30" id="inputAltura" required>
         </div>
         <div class="Pressão-Arterial\:">
             <p>Pressão Arterial:</p>
-            <input type="number" name="inputPressão" size="30" required>
+            <input type="number" name="inputPressão" size="30" id="inputPressao" required>
         </div>
         <div class="Saturação\:">
             <p>Saturação:</p>
-            <input type="number" name="inputSaturação" size="30" required>
+            <input type="number" name="inputSaturação" size="30" id="inputSaturacao" required>
         </div>
         <div class="CPF\:">
             <p>CPF:</p>
-            <input type="number" name="inputCPF" placeholder="Insira apenas números" size="30" required>
+            <input type="number" name="inputCPF" placeholder="Insira apenas números" size="30" id="inputCPF" required>
         </div>
         <div class="Data-de-nascimento\:">
             <p>Data de Data de nascimento:</p>
-            <input type="date" name="inputNascimento" size="30" required>
+            <input type="date" name="inputNascimento" size="30" id="inputNascimento" required>
         </div>
       </div>
       <div class="container2">
         <div class="submitDados">
-            <input type="submit">
+            <input type="submit" onclick="capturaDados()">
         </div>
       </div>
         
