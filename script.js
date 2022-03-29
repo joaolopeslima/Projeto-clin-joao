@@ -2,17 +2,18 @@ function checagem() {
     
     var selMed = document.getElementById('selMed');
 
-    var selHorario = document.getElementById('selHorario');
+    var selData = document.getElementById('selData');
 
     var checaMed = selMed.options[selMed.selectedIndex].value;
+    
+    var checaData = selData.value;
 
-    var checaHorario = selHorario.options[selHorario.selectedIndex].value;
 
-    if (checaMed == 0 || checaHorario == 0){
-        alert ("selecione todos os itens");
+    if (checaMed == 0){
+        alert ("selecione o médico");
     }
     else{
-        window.location.href ="projetoClinJoao-Cadastro.html"
+        window.location.href ="projetoClinJoao-Cadastro.html"    
     }
 
  }
@@ -37,6 +38,8 @@ function checagem() {
         console.log("Data de Nascimento: " + textoNascimento)
 
     }
+
+    
 
     /*dados:
     Nome, Sobrenome, Peso, Altura, Pressão Arterial, Saturação, CPF, Data de Nascimento */ 
